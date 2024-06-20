@@ -1,0 +1,310 @@
+https://nodejs.org/en > Install
+https://git-scm.com/downloads > Install
+https://github.com/ > Create Account
+https://github.com/Aakashdeveloper > Follow
+
+extension vscode
+
+> vscode icons
+> gitlens
+> githistory
+> spellcheck
+> tabnine
+
+Npm
+FullStack Zomato app
+Template Forms
+Reactive Forms
+Dummy api
+Login logout (jwt)
+Deployment
+
+> Angular over node server
+> Angular over python server
+> Netlify(https://www.netlify.com/)
+> Github
+> Jenkins
+> nginx
+> Github Actions
+> Docker
+> //////////////////////
+> AWS
+> LazyLoading
+
+Testing
+Zomato+login logout
+
+> > > > > > > > NO Covered<<<<<>>>>>
+> > > > > > > > HTML CSS JAVASCRIPT
+> > > > > > > > No Api Building (app,loginlogout)
+
+open source
+
+////
+**_Package.json_**
+
+> Entry point to app
+> Meta data(version, description, package, commands)
+
+/// Step to generate package.json
+\*\* Nodejs must be install in laptop
+
+> open the cmd/terminal and go inside the folder
+> npm init
+> answer all question
+> type "yes"
+
+/// Step to install packages
+\*\* Nodejs must be install in laptop
+
+> open the cmd/terminal and go inside the folder
+> npm i packagename
+
+package-lock > have dependency tree for child package
+node_modules > have all the package we installed in app
+.gitignore > to avoid pushing code to git
+
+local
+
+> Local to the folder
+> Can be used inside this folder only
+
+global
+
+> install in laptop
+> use to generate angular app
+> need admin permision to install
+
+//step to generate angular app
+
+# one time
+
+# window
+
+> open cmd as admin
+> npm i -g @angular/cli
+
+# next all tine
+
+> open cmd
+> go inside particular folder
+> ng new appname
+
+# one time
+
+# mac
+
+> open terminal
+> sudo npm i -g @angular/cli
+
+# next all tine
+
+> open terminal
+> go inside particular folder
+> ng new appname
+
+Angular
+
+> Frontend Framework that help to build the
+> single page application with component based structure
+
+/////File Walkthrough////
+Package.json> Entry point to app and Meta data(version, description, package, commands)
+package-lock > have dependency tree for child package
+node_modules > have all the package we installed in app
+.gitignore > to avoid pushing code to git
+Readme.md > Detail description and its a static file
+.editotconfig > Make code compitable for editor and same accross developer
+karma.conf> use to configuration releated to test case
+tsconfig.json > Provide application which version of javascript to target and other compliation
+tsconfig.app.json > configure for whole app to run with typescript.
+.browserslistrc > Make code compitable for browser
+angular.json > Main configuration of app > which is first .ts file to pick > which css or html to refer
+
+> > > > > > > > src
+> > > > > > > > polyfills > make compitable with browser
+> > > > > > > > style.css > common css fro whole app
+> > > > > > > > favicon.icon > image displyed on browser
+> > > > > > > > test.ts > used by karma as configuration
+> > > > > > > > main.ts > first .ts help to bootstrap and help to load first modules
+> > > > > > > > index.html> first html file load in load in browser
+> > > > > > > > /assests > all static thing mostly images
+> > > > > > > > /app > all development happen here
+
+///////////
+package.json > angular.json> main.ts > app.modules.ts > app.component.ts > index.html
+
+browser > index.html
+
+npm i -g @angular/cli@15
+
+https://update.angular.io/?v=15.0-17.0
+
+///////////Angular Building block
+Modules
+
+# ngModule
+
+- Parent of app
+- All the declaration will happen here
+
+Components
+
+# component
+
+- html css
+- logics
+
+Pipes
+
+# pipe & pipetransform
+
+- Run time data manipulation
+
+Services
+
+# Injectable
+
+- To connect with external agent
+- Dependency Injection
+
+Routing
+
+# ngModule
+
+- To navigate between the pages
+- TO achieve single page application
+
+/////Command
+
+> Component
+
+# ng g c componentname
+
+data binding
+
+> > > One way data binding
+
+- Data Binding {{}}
+- Property Binding []
+- Event Binding ()
+
+> > Two way data binding [()]
+
+(NodeJs + Express + Mongodb + Aws)
+(get) cityname > http://3.17.216.66:4000/location
+(get) restwrtcity > http://3.17.216.66:4000/restaurant?stateId=1
+(get) quickSearch> http://3.17.216.66:4000/quicksearch
+
+(get) onbasisofMeal > http://3.17.216.66:4000/restaurant?mealtype_id=
+(get) cuisinefilter > http://3.17.216.66:4000/filter/4?cuisine=1
+(get) costfilter > http://3.17.216.66:4000/filter/1?hcost=1000&lcost=500
+
+(get) restdetails > http://3.17.216.66:4000/details/1
+
+(get) allorder>
+
+(get) restaurants> http://3.17.216.66:4000/restaurants
+
+/////JSON///////
+JavaScript Object Notation
+Way to represent the data
+key value pair
+
+[
+{
+"name":"John",
+"city":"Amsterdam"
+},
+{
+"name":"Doe",
+"city":"Helsinki"
+},
+{
+"name":"Anjali",
+"city":"Helsinki",
+"age":10
+}
+]
+
+//structural directive
+*ngIf
+*ngFor
+\*ngSwitch
+
+//////
+var a = 10
+var b = "my age is "+a
+"my age is 10"
+
+var a = 10
+var b = `my age is ${a}`
+"my age is 10"
+
+//////
+params
+
+> What we pass after /
+> if we have to pass params then we need to define
+
+queryParams
+
+> What we pass after ?
+> no need to define
+
+var a = [2,6,4,3,8,6,1]
+
+a.filter((data) => {return data >5})
+
+@Input > parent to child
+@Output(eventEmitter) > child to parent
+
+ng-touched ng-dirty ng-invalid
+ng-untouched ng-prestine ng-valid
+
+Dummy Api
+
+> npm i -g json-server
+
+json-server --watch data.json --port 9122
+
+/**\*\***GetAllUser**\***/
+(GET)> http://3.17.216.66:5000/api/auth/users
+
+/**\*\***Register**\***/
+(POST)> http://3.17.216.66:5000/api/auth/register
+(body) => {"name":"Aakash", "email":"aa@gmail.com","password":"12345678","phone":343432,role?":"user"}
+
+/**\*\***Login**\***/
+(POST) => http://3.17.216.66:5000/api/auth/login
+(body) => {"email":"aa@gmail.com","password":"12345678"}
+(response)=> {auth:true,token:'dgsdg'}
+
+/**\*\***UserInfo**\***/
+(GET) => http://3.17.216.66:5000/api/auth/userinfo
+(Header) => {'x-access-token':'token value from login'}
+
+//////
+Making build of angular app
+///
+npm run build
+
+https://raw.githubusercontent.com/Aakashdeveloper/Aakashdeveloper/master/README.md
+
+// first time
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Aakashdeveloper/marchzom.git
+git push -u origin main
+
+// next all time
+git add .
+git commit -m "first commit"
+git push
+
+git checkout -b branchname
+
+docket build . -t imagename
+docket run -p 4200:8900 imagename
